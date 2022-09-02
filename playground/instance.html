@@ -8,15 +8,40 @@
 </head>
 <body>
     <div id="app"></div>
+    <!-- 라이브러리를 사용하기 위해 필요한 코드
+        HTML 파일을 브라우저가 해석하다가 해당 주소로 GET 요청을 보내 파일을 얻어온다.
+        자바스크립트 영역에 해당 라이브러리를 사용할 수 있는 변수나, 기능들이 생기게 되는 것.
+        결론: new Vue() 인스턴스 생성하기 위힌것    
+    -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
+        // var options = {
+        //     // app이라는 아이디를 갖는 태그를 찾아서 인스턴스를 붙인다는 것.
+        //     // 붙이는 순간 이 태그 안에서 뷰의 기능과 속성들이 유효해짐. 
+        //     // 이게 없으면 데이터를 정의해도 태그 안에서 사용할 수 없음.
+        //     el: '#app',
+        //     data: {
+        //         message: 'hi'
+        //     },
+        //     methods: {
+                
+        //     },
+        // }
+        // var vm = new Vue(options);
+
         var vm = new Vue({
             // app이라는 아이디를 갖는 태그를 찾아서 인스턴스를 붙인다는 것.
             // 붙이는 순간 이 태그 안에서 뷰의 기능과 속성들이 유효해짐. 
             // 이게 없으면 데이터를 정의해도 태그 안에서 사용할 수 없음.
-            el: '#app', 
+            el: '#app',
             data: {
                 message: 'hi'
+            },
+            methods: {
+
+            },
+            created: function() {
+
             }
         });
     </script>
