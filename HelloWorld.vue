@@ -31,6 +31,9 @@
 </template>
 
 <script>
+// var appContent = {
+//   props: ['propsdata']
+// }
 export default {
   name: 'HelloWorld',
   props: {
